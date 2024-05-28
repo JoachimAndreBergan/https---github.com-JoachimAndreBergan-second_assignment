@@ -17,7 +17,7 @@
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
-    background-color: brown;
+    background-color:cornflowerblue;
 }
 
 .book-form input{
@@ -30,7 +30,14 @@
 .submit-button{
     height: 2rem;
     cursor: pointer;
-    
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+}
+
+.format{
+    height: 2rem;
+    border-radius: 0.25rem;
 }
 
 .book-list{
