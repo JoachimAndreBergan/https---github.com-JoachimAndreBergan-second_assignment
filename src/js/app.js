@@ -1,1 +1,5 @@
-console.log("test")
+
+
+
+//selecting the elements from the dom
+

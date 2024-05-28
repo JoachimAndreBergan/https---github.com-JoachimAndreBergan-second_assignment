@@ -17,7 +17,7 @@
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
-    background-color:cornflowerblue;
+    background-color:rgb(0, 171, 137);
 }
 
 .book-form input{
@@ -57,7 +57,8 @@
     justify-content:center;
     align-items: center;
     gap: 2rem;
-    background-color: aquamarine;
+    margin-bottom: 1rem;
+    background-color: teal;
 }
 
 .display-books-container{
@@ -77,7 +78,9 @@
 .physical-books-header, .audio-books-header{
     display: flex;
     height: 2.5rem;
+    background-color:whitesmoke;
     border: 2px solid white;
+    border-radius: 0.5rem;
 }
 
 .physical-books-header span{
@@ -92,4 +95,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.display-audio-books{
+    display: none;
 }
