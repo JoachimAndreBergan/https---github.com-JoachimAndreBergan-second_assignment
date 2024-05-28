@@ -40,8 +40,56 @@
     border-radius: 0.25rem;
 }
 
+
+
+
 .book-list{
     flex-basis: 70%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: cadetblue;
+}
+
+.select-list-button-container{
+    flex-basis: 15%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2rem;
+    background-color: aquamarine;
+}
+
+.display-books-container{
+    flex-basis: 85%;
+    padding: 0 1rem;
+}
+
+.render-physical-book-button, .render-audio-book-button{
+    width: 12rem;
+    height: 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+}
+
+.physical-books-header, .audio-books-header{
+    display: flex;
+    height: 2.5rem;
+    border: 2px solid white;
+}
+
+.physical-books-header span{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audio-books-header span{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
