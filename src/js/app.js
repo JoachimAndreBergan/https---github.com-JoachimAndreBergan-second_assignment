@@ -12,6 +12,7 @@ const quantity = document.querySelector(".quantity");
 const productId = document.querySelector(".productId");
 const booksUl = document.querySelector('.prescription-meds-list');
 const audioBooksUl = document.querySelector('.non-prescription-meds-list');
+const MedForm = document.querySelector('.medForm');
 
 const displayPrescriptionMedsContainer = document.querySelector(
   ".display-prescription-meds"
@@ -26,7 +27,7 @@ const renderAudioBooksButton = document.querySelector('.render-non-prescription-
 // ADDING THE EVENT LISTENERS
 
 
-medForm.addEventListener("submit", (e) => {
+MedForm.addEventListener("submit", (e) => {
   e.preventDefault();
   let newBook;
   if (prescriptionSelect.value === "prescription") {
@@ -62,7 +63,7 @@ renderPhysicalBooksButton.addEventListener('click', ()=>{
 })
 renderAudioBooksButton.addEventListener('click', ()=>{
     UI.activeTab = 'non-prescription';
-    UI.renderAudioBooks(AudioBook)
+    UI.renderAudioBooks (AudioBook)
 })
 
 // DECLARING THE BOOK CLASS
@@ -158,8 +159,8 @@ class UI {
     displayPrescriptionMedsContainer.style.display ='none'
     displayNonPrescriptionMedsContainer.style.display = 'block';
 
-    if(UI.activeTab === 'non-prescription'){
-        nonPrescriptionMeds.forEach((nonPrescriptionMeds) => {
+    if (UI.activeTab === 'non-prescription'){
+        nonPrescriptionMeds.forEach( (nonPrescriptionMeds) => {
             const liRow = document.createElement('li');
             const renderedProduct = document.createElement('span');
             const renderedManufacturer = document.createElement('span');
